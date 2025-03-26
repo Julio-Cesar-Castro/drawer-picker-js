@@ -1,0 +1,72 @@
+#content {
+  max-width: 24.375rem;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/images/Shapes.png);
+  background-size: contain;
+}
+
+.content-container {
+  max-width: 24.375rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.75rem 2.1875rem;
+
+  & header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .title-container {
+
+    margin-top: 2.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: start;
+
+    & span {
+      font: var(--overline);
+      background: -webkit-linear-gradient(var(--gradient-content));
+      background-clip: text;
+      color: transparent;
+    }
+
+    & h1 {
+      font: var(--display-medium);
+      color: var(--content-primary);
+      text-transform: uppercase;
+    }
+  }
+
+  & main {
+    width: 100%;
+    margin-top: 2.625rem;
+
+    & .drawer-picker-paragraph {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 0.125rem;
+
+      & h2 {
+        font: var(--label-medium);
+        color: var(--content-primary);
+        text-transform: uppercase;
+      }
+
+      & span {
+        font: var(--paragraph-medium);
+        color: var(--content-tertiary);
+      }
+    }
+  }
+}
+
+@media (width <=90rem) {
+  #content {
+    max-width: 90rem;
+  }
+}
