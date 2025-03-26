@@ -4,23 +4,27 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/index.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
     rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <title>Sorteador de números</title>
 </head>
 
 <body>
   <div id="content">
-    <div class="desktop-only"></div>
     <div class="content-container">
+
       <header>
         <img src="assets/Icons/logo.svg" alt="Logo escríto number">
       </header>
-
       <div class="title-container">
         <span>Online - Gratuito</span>
         <h1>Sorteador de números</h1>
@@ -34,8 +38,63 @@
             clique em "Sortear" e veja os resultados na tela. É rápido
             e fácil!
           </span>
+
+          <form>
+            <div class="number-content">
+              <div class="number-field-container">
+                <label class="label-field" for="">Números</label>
+                <input class="number-field" type="text">
+              </div>
+              <div class="number-field-container">
+                <label class="label-field" for="">DE</label>
+                <input class="number-field" type="text">
+              </div>
+              <div class="number-field-container">
+                <label class="label-field" for="">DE</label>
+                <input class="number-field" type="text">
+              </div>
+            </div>
+
+            <div class="container-checkbox">
+              <input type="checkbox" name="" id="">
+              <label for="">Não repetir número</label>
+            </div>
+
+            <div class="container-btn">
+              <button>
+                Sortear
+                <img src="assets/Icons/next.svg" alt="">
+              </button>
+            </div>
+          </form>
         </div>
       </main>
+
+      <footer>
+        <article>
+          <img src="assets/Icons/chat.svg" alt="">
+          <div class="title">
+            <h2>Como funciona o sorteador de números?</h2>
+            <p>
+              O sorteador utiliza um algoritmo de geração
+              aleatória para criar números dentro do intervalo
+              especificado
+              pelo usuário.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="assets/Icons/chat.svg" alt="">
+          <div class="title">
+            <h2>Como funciona o sorteador de números?</h2>
+            <p>
+              Sim, você pode definir os valores
+              mínimo e máximo para o intervalo dos
+              números sorteados.
+            </p>
+          </div>
+        </article>
+      </footer>
 
     </div>
   </div>

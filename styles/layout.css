@@ -61,12 +61,100 @@
         font: var(--paragraph-medium);
         color: var(--content-tertiary);
       }
+
+      & form {
+        margin-top: 2.5rem;
+
+        & .number-content {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.75rem;
+
+
+          & .number-field-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            & .label-field {
+              width: fit-content;
+            }
+
+
+            & .number-field {
+              width: 86px;
+              height: 56px;
+            }
+          }
+        }
+
+        & .container-checkbox {
+          margin-top: 1.25rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          &>label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            color: var(--content-primary);
+            font-weight: 300;
+          }
+
+        }
+
+        & .container-btn {
+          & button {
+            margin-top: 2.5rem;
+            width: 100%;
+          }
+        }
+
+
+      }
     }
   }
+
+  & footer {
+    width: 100%;
+    margin-top: 5rem;
+
+    & article:nth-child(2) {
+      margin-top: 2.25rem;
+    }
+
+    & article {
+      display: flex;
+      align-items: start;
+      gap: 0.5rem;
+
+      & h2 {
+        font: var(--paragraph-medium);
+        color: var(--content-brand);
+      }
+
+      & p {
+        font: var(--paragraph-small);
+        color: var(--content-secondary);
+      }
+
+
+    }
+  }
+
 }
 
-@media (width <=90rem) {
+@media (width >=90rem) {
   #content {
     max-width: 90rem;
+  }
+
+  .content-container {
+    max-width: 120rem;
+    width: 100%;
+    padding: 4.75rem 8.375rem 9.5625rem 8.375rem;
   }
 }
