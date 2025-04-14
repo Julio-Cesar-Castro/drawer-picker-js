@@ -33,15 +33,15 @@
 
       <main>
         <div class="drawer-picker-paragraph">
-          <!-- <h2>Quero sortear:</h2>
-          <span>
+          <h2 class="hide">Quero sortear:</h2>
+          <span class="hide">
             Defina o intervalo e a quantidade de números,
             clique em "Sortear" e veja os resultados na tela. É rápido
             e fácil!
-          </span> -->
+          </span>
 
           <form>
-            <div class="number-content">
+            <div class="number-content hide">
               <div class="number-field-container">
                 <label class="label-field" for="">Números</label>
                 <input id="quantity" class="number-field" type="text">
@@ -56,12 +56,12 @@
               </div>
             </div>
 
-            <div class="container-checkbox">
+            <div class="container-checkbox hide">
               <input type="checkbox" name="" id="">
               <label for="">Não repetir número</label>
             </div>
 
-            <div class="container-btn">
+            <div class="container-btn hide">
               <button>
                 Sortear
                 <img src="assets/Icons/next.svg" alt="">
@@ -70,18 +70,15 @@
 
 
             <div class="showDrawer">
-              <div>
+              <div class="showDrawer-text">
                 <h2>Resultado do sorteio</h2>
                 <p>1º RESULTADO</p>
               </div>
 
-              <div class="container-draw">
-                <!-- <span class="draw">23</span>
-                <span class="draw">12</span> -->
-              </div>
+              <div class="container-draw"></div>
             </div>
 
-            <div class="contanier-btn">
+            <div class="contanier-btn showDrawer-btn">
               <button>
                 Sortear Novamente
                 <img src="assets/Icons/play.svg" alt="">

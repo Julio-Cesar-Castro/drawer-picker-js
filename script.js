@@ -6,9 +6,14 @@ const form = document.querySelector("form")
 const contentDraw = document.querySelector(".container-draw")
 const checkbox = document.querySelector("input[type='checkbox']")
 
+const hideAll = document.querySelectorAll(".hide")
+const showDrawer = document.querySelector(".showDrawer")
+const showDrawerBtn = document.querySelector(".showDrawer-btn")
+const showDrawerText = document.querySelector(".showDrawer-text")
+
+
 // Gloval Variables
 let arrayNumbers = []
-
 
 // Functions
 /**
@@ -17,8 +22,18 @@ let arrayNumbers = []
  * @param {Number} min  Minimum number that the user wants to keep in range
  * @returns 
  */
-function  getRandomNumber(max, min){
+function getRandomNumber(max, min){
   return Math.floor(Math.random() * ((max + 1) - min) + min)
+}
+
+function returnPage(){
+  hideAll.forEach(element => {
+    element.style.display = 'flex'
+  })
+
+  showDrawer.style.display = 'none'
+  showDrawerBtn.style.display = 'none'
+
 }
 
 // Events
@@ -42,15 +57,28 @@ form.addEventListener('submit', (e) => {
     arrayNumbers.push(number)
   }
 
-  
+  hideAll.forEach(element => {
+    element.style.display = 'none'
+  })
+
+  showDrawer.style.display = 'flex'
+  showDrawerBtn.style.display = 'flex'
+  showDrawerText.style.display = 'initial'
+
   arrayNumbers.forEach(drawer => {
     let span = document.createElement('span')
 
     span.classList.add('draw')
     span.innerText = drawer
+    span
 
     contentDraw.append(span)
   })
 
-  console.log(arrayNumbers)
+})
+
+showDrawerBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+
+  returnPage()
 })

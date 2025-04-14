@@ -46,6 +46,28 @@
   --paragraph-small: 500 0.75rem/1.5 var(--ff-robotoFlex);
   --label-medium: 700 1.25rem/1.5 var(--ff-robotoFlex);
   --label-small: 700 1rem/1.5 var(--ff-robotoFlex);
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #C58DE7 #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #C58DE7;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+  }
 }
 
 html,
@@ -70,6 +92,12 @@ body {
 
 input {
   all: unset;
+}
+
+.showDrawer,
+.showDrawer-btn,
+.showDrawer-text {
+  display: none;
 }
 
 .number-field-container {
