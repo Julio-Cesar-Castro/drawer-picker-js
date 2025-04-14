@@ -114,6 +114,42 @@
         }
 
 
+        & .showDrawer {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 294px;
+          gap: 2.5rem;
+          overflow: hidden;
+
+          &>div{
+            width: 100%;
+            text-align: center;
+
+            & p {
+              margin-top: 0.25rem;
+            }
+          }
+
+          & .container-draw {
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            & .draw {
+              font-size: 3rem;
+              font-weight: 600;
+              color: var(--content-brand)
+            }
+          }
+
+        }
+
+
       }
     }
   }
