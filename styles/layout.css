@@ -205,7 +205,7 @@
 
       &>footer {
         grid-area: C;
-        margin-top: 0;
+        margin-top: 38px;
 
         & article {
           width: 24.125rem;
